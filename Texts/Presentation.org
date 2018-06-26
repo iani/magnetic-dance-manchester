@@ -42,6 +42,10 @@ https://www.adafruit.com/product/2020  This is listed as discontinued, but is st
 
 A wearable wireless device is needed to send the data.  We started with the Chip-Pro, a wireless-enabled linux computer costing 16 US$ made by Next Thing Computing.  Unfortunately production stopped on this hardware in March of 2018.  A second alternative is Adafruit's Feather Huzzah ESP8266.  This uses wireless chip technology by Shanghai based company Espoir and is equally small, light and low-cost as NTC's Chip Pro, but has limited computing resources and no proper operating system. However it is programmable by Lua and Python, which makes it quite versatile. 
 
+** Construction of the wearable prototype
+
+The wearable prototype was made by Keisuke Inoue and Emi Yamamoto of FabLab Kanda Nishikicho in Tokyo (http://fablabkn.tokyo) within 2 hours during Friday open lab hour.  The sensor device was detectd by the wireless module immediately after completion of the model. Thank you for a very instructive and enjoyable session!
+
 ** Software for Embedded Devices and Internet of Things (IoT)
 
 The Chip Pro is programmed almost exclusively using Docker (https://www.docker.com), a recent technology for light-weight virtualization and container deployment on the cloud.  While this technology is very powerful, it is also still cutting edge and thus we encountered compatibility and configuration problems when trying to port work from Linux to MacOS.
