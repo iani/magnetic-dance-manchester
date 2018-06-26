@@ -4,13 +4,9 @@
 * Introduction
 
 ** Overview
- The title of this presentation could be "Dancing and Weaving Songs with Electrons and Quanta:  Emergence of metric patterns in telematic dance performance."
+The title of this presentation could be "Dancing and Weaving Songs with Electrons and Quanta:  Emergence of metric patterns in telematic dance performance."  It relates a project that was conceived in January 2018, just 5 months before the start of my residency in Tokyo, and is still in its beginning phase.  The project is ambitious because of the need that presented itself to bridge the distance between Japan and Europe through simultaneous live performance, in through telematic dance in several cities, Tokyo, Athens, Brussels and Manchester.  The impulse for this conception was circumstantial, as I wanted to participate in an exhibition that is taking place right now in Athens because of the affinity of its topic to my ongoing research direction in Art-Science, and the only clearly worthwhile way to do this seemed to be through a live performance that did not just consist of me sitting behind my laptop in Tokyo and sending data online to Athens.  Thus began a task whose complexity exploded rapidly at an alarming rate, as did its theoretical ramifications and interest for me.
 
- The project spans a wide spectrum of scientific and artistic fields, from Artificial Life and Quantum Biology to Telematic Dance, Live Coding and Embodied Interaction in Music Performance.
-
- The project was concieved at the beginning of 2018 and is still in its initial phase.  Here I will report on the conceptual background of the project and the technical work so far.
-
- Finally, I will mention some plans for the immediate future, and open up the stage for discussion.
+The project spans a wide spectrum of scientific and artistic fields, from Artificial Life and Quantum Biology to Telematic Dance, Live Coding and Embodied Interaction in Music Performance.  Furthermore, it combines several techniques and tools for live performance, including wearable sensor devices, live-coding systems for music performance and telematic performance using the internet.  As such, the technical challenges proved to be far greater than anticipated, and progress was delayed, as new know-how had to be acquired in addition to developing novel, untested approaches, mostly relying on low-cost open-source hardware and software.  There is thus little to show at this point, but I am greatful to Ricardo Climent for his support and the offer to present at this workshop, despite the risks.  Therefore, I will try here to convey a sense of the journey so far. I will start from the project's conception and introduce the disparate ideas that entered it in the manner of actor appearances in a play.  Then I will outline the technical development work so far and give some examples.  If time permits, a taste of the development and technical work will be given through sample demo sessions of communication tests and programming of wearable embedded devices. Finally, I will mention some plans for the immediate future, and open up the stage for discussion.
 
 ** Background
 
