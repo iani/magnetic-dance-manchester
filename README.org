@@ -1,0 +1,3 @@
+This repository contains documentation for the Magnetic Dance project.
+
+Please see folders "Texts" and "Images".
