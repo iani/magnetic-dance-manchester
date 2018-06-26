@@ -1,0 +1,126 @@
+% Created 2018-06-26 Tue 16:41
+% Intended LaTeX compiler: xelatex
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{IOANNIS ZANNOS}
+\date{\today}
+\title{Magnetic Dance\\\medskip
+\large An Art-Science Experiment in Embodied Interaction}
+\hypersetup{
+ pdfauthor={IOANNIS ZANNOS},
+ pdftitle={Magnetic Dance},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.0.50 (Org mode 9.1.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Introduction}
+\label{sec:orgf3ec34f}
+
+\subsection{Overview}
+\label{sec:orgfe550c8}
+The title of this presentation could be "Dancing and Weaving Songs with Electrons and Quanta:  Emergence of metric patterns in telematic dance performance."  It relates a project that was conceived in January 2018, just 5 months before the start of my residency in Tokyo, and is still in its beginning phase.  The project is ambitious because of the need that presented itself to bridge the distance between Japan and Europe through simultaneous live performance, in through telematic dance in several cities, Tokyo, Athens, Brussels and Manchester.  The impulse for this conception was circumstantial, as I wanted to participate in an exhibition that is taking place right now in Athens because of the affinity of its topic to my ongoing research direction in Art-Science, and the only clearly worthwhile way to do this seemed to be through a live performance that did not just consist of me sitting behind my laptop in Tokyo and sending data online to Athens.  Thus began a task whose complexity exploded rapidly at an alarming rate, as did its theoretical ramifications.  
+
+The ideas potentially connected with the project span a wide spectrum of scientific and artistic fields, from Artificial Life and Quantum Biology to Telematic Dance, Live Coding and Embodied Interaction in Music Performance.  Furthermore, the project combines several techniques and tools for live performance, including wearable sensor devices, live-coding systems for music performance and telematic performance using the internet.  As such, the technical challenges proved to be far greater than anticipated, and progress was delayed, as new know-how had to be acquired in addition to developing novel, untested approaches, mostly relying on low-cost open-source hardware and software.  There is thus little to show at this point, but I am grateful to Ricardo Climent for his support and the offer to present at this workshop, despite the risks.  Therefore, I will try here to convey a sense of the journey so far. I will start from the project's conception and introduce the disparate ideas that entered it in the manner of actor appearances in a play in a subjective and speculative manner.  Then I will outline the technical development work so far and give some examples.  If time permits, a taste of the development and technical work will be given through sample demo sessions of communication tests and programming of wearable embedded devices. Finally, I will mention some plans for the immediate future, and open up the stage for discussion.  
+
+\subsection{Theoretical Background}
+\label{sec:orgea0c014}
+
+\subsubsection{Preliminary orientation: Music as self-organizing process}
+\label{sec:orge8e6794}
+
+The following paragraph relates the personal research interests out of which the idea of the project arose, and thus to serve provide a backround for understanding the conception of the project. 
+
+Since my first contact with AI research during my studies at the AI laboratory of Prof. Setsuo Ohsuga in the University of Tokyo, I had been intrigued by the possibility of formulating composition not through the theorem-solving typo of symbolic approach of classic AI, but as a self-organizin process wich tended towards some kind of equalibrium between the participants in the musical process and their cultural and natural environment. This interest was fired by my fascination with neural networks but also with the idea of emergence of higher-order patterns in complex systems in natural and artificial environments. The opportunity to develop this arose when Nick Collins issued the SCMIR library which extracts perceptual and psychoacoustic features from digital audio signals in SuperCollider.  In this context, I performed some multichannel pieces using sampled audio as base material and live coding as performance technique.  This led to the development of a library for live coding with SuperCollider named \texttt{sc-hacks}.  (\url{https://github.com/iani/sc-hacks}). 
+
+\subsubsection{Initial stimulus: From sonification of magnetic fields to biosemiotics}
+\label{sec:org097798a}
+
+The project arose under the circumstances of my sabbatical research stay in Tokyo in Spring and Summer of 2018.  Due to the need to participate at an Art-Science exhibition organised by my colleague Prof. Spyros Verykios during that period, I had to devise a way to perform remotely that would be original and make sense in the context of the exhibition. As it developed, the project incorporated other research topics and ideas that had preoccupied me since the beginning of my studies in Informatics as well as during my participation in the previous installment of the EASTN Project (2014-2015) and in the preparatory phase of EASTN-DC, of which this workship is part.  It is not clear yet how much and in what manner these concepts will be applied to the project in practice.  Rather, these are questions that drive the design of future experiments and research within the project.  It is as such that the ideas below as presented, as an account of the ideas driving the project in order to give an insight to the mechanisms underlying its process, and not as a scientific exposé.
+
+As starting point for his exhibition project, Prof. Verykios chose the 1966 Science Fiction film "Fantastic Voyage".  He formulated a call for works dealing with navigating the inner space of humans both figuratively and literally, and by extension also the discovery of parallels between Inner and Outer Space (in the thelematic sense, "As Above So Bewow").  The exhibition is showing at the National Observatory of Athens (NOA) till end of this month (\url{https://cosmonauts1.wixsite.com/cosmonauts/athens}).  I had been invetigating the possibility of a collaboration with NOA dealing with the sonification of magnetic storms since 2017, and thus I thought it would be a good opportunity to participate.  However, since I had planned to be on sabbatical in Tokyo from May 2018, the only way to participate with a live event would be remotely. The initial idea was to scan the local magnetic field of the two locations involved, Athens and Tokyo using easily available magnetic sensors such as those used in mobile devices for navigation, and to use the data for sonification.  The performers would wear magnetometers on their body and explore variations in the ambiend magnetic field in this way, using sound as feedback for their orientation.  Already this basic idea seem interesting as it introduced magnetism as a sense source for humans, which suggested parallels to alternative sense forms in other life forms, such as microorganisms or plants.  Just as these organism use phototropism or chemotropism to adapt to search for energy sources in their environment, the dancers would use the ambient magnetic field to navigate or adapt their sonic environment as a metaphoric source of energy.  Moreover the use of such an exotic stimulus source as sense suggested associations with early work in the field of biosemiotics which had interested me for a while.  Jakob von Uexküll's 1934 paper "A Stroll through the Worlds of Animals and Men: A Picture Book of Inisible Worlds" proposed a very early model of perception of the environment built in bottom up manner - without the preconceptions about perception inherent in human-centric views. In this paper, he introduced the notion of environment (Umwelt) in Biology and Comparative Psychology, and thus opened the way to Environmental Sciences.  As the title suggests, the article argues that each biological entities world view is built by using the signals received from the sensory organs at its disposal, and that therefore different animals can have radically different views or perceptions of the world.  By studying the perception and behavior mechanism of simple animals such as the tick, a parasite that uses only the senses of smell and temperature to find its prey, Uexküll opened the way to cybernetics.  Furthermore, his suggestion that there is not just one valid world view, but many views dependent on the sense and action mechanisms of the perceiving subjects, prefigures some basic tenets of Radical Constructivism developed amongst others by biologists Umberto Maturana and Francisco Varela.  
+
+The scenario for magnetic dance derived from the above ideas is to use sensors worn on dancers as a tightly coupled sense-action navigation device for exploring the environment according to the physical parameters measured by the sensor, and the feedback is given in a metaphorical musical sense as sound.  To this purpose, the data of the sensors from each dancer is broadcast to the sound-generating workstation in all locations.  At each location runs a sound-generating algorithm whose parameters are driven from the data received from the dancers.  The dancers are asked to listen to the sound generated and experiment freely with the control possibilities afforded by the sensors, to create music to their liking or to try to approximate sounds which they seem fit.  This starting point is almost arbitrarily simplistic, however the next step in the design of the project's experiment shows that a more intricate and well-defined language can arise in this context merely by taking into account the control affordances provided by the sensor devices.  Additionally, at a later stage more rules can be devised drawing upon metaphors from Artificial Life research relating to autopoesis, self-organization, energetic equalibrium and chemical simulations, and multiple other possibilities.
+
+\subsubsection{Live Coding, Weaving, Embodied Interaction and Traditional African Music}
+\label{sec:org594f9f8}
+
+The general nature of the exprerimental setup for this project inherently links towards the live coding practice of AlgoRaves, i.e. Rave parties where the music is programmed through live coding.  Following this lead, we drafted a model for rudimentary control of metric patterns in a rhythm-oriented music genre through movements from the dancers.  This is outlined in a paper to be presented at the Sound and Music Computing 2018 conference on July 8, 2018 (see attachment in Texts folder of the present repository.)  
+
+\section{Implementation}
+\label{sec:org56f50d3}
+
+\subsection{Sensors}
+\label{sec:org60ca8f7}
+
+We tried 2 types of sensors from Adafruit: 
+
+\begin{enumerate}
+\item The Flora 9DOF (= 9 degrees of freedom) Accelerometer/Gyroscope/Magnetometer - LSM9DS0 - v1.0
+\end{enumerate}
+\url{https://www.adafruit.com/product/2020}  This is listed as discontinued, but is still available on stock from mouser electronics.  A larger newer successor model and an enhanced model are available, and we have receive these for evaluation. 
+\begin{enumerate}
+\item The BNO055 absolute orientation fusion breakout, \url{https://www.adafruit.com/product/2472}. This promises to send more reliable and useable orientation data by combining the data from its incorporated sensors and translating them to useful formats (Euler angles, Quaternions).  However, we could not interface this to the wireless module, and Adafruit support confirmed that there are hardware problems with this unit. To solve these problems low-level programming of the i2c interface is required.  This has been done for the Chip-Pro wireless device, and so we could obtain data there.
+\end{enumerate}
+
+\subsection{Wearable Wireless Technology}
+\label{sec:org8459a6d}
+
+A wearable wireless device is needed to send the data.  We started with the Chip-Pro, a wireless-enabled linux computer costing 16 US\$ made by Next Thing Computing.  Unfortunately production stopped on this hardware in March of 2018.  A second alternative is Adafruit's Feather Huzzah ESP8266.  This uses wireless chip technology by Shanghai based company Espoir and is equally small, light and low-cost as NTC's Chip Pro, but has limited computing resources and no proper operating system. However it is programmable by Lua and Python, which makes it quite versatile. 
+
+\subsection{Software for Embedded Devices and Internet of Things (IoT)}
+\label{sec:orgcc857b4}
+
+The Chip Pro is programmed almost exclusively using Docker (\url{https://www.docker.com}), a recent technology for light-weight virtualization and container deployment on the cloud.  While this technology is very powerful, it is also still cutting edge and thus we encountered compatibility and configuration problems when trying to port work from Linux to MacOS.
+
+The Feather Huzzah ESP8266 is programmed by Python.  The libraries provided by Adafruit work well and the support is sufficient to permit programing even for beginners in embedded devices like myself.  However, as noted, the python library for BNO055 does not work. 
+
+\subsection{Performance Model on SuperCollider}
+\label{sec:orgaabfd00}
+
+For sound generation and modeling of the musical process we are developing a model on SuperCollider.  The model broadcasts data from each performance location to all other locations and to itself.  All performers have equal status for all running models, thus permitting maximum flexibility and simplicity.  We built this model on top live-coding library \texttt{sc-hacks} in order to add live-coding capabilities, which both speed up develpment and enable to modify the behavior of the program on the fly. 
+
+\section{Network aspects}
+\label{sec:org38d5b25}
+
+The restrictions for combining local data reception from the wearable wireless unit with broadast to other locations over whe Wide Area Network are strict: 
+
+\begin{itemize}
+\item The supercollider running workstation at each performance venue must have a static IP address which is globally reachable on the Wide Area Network, either through Network Address Translation, or through direct routing.
+\item The workstation must be connected to a WiFi network whose name (SSID) and password are known, and which is not protected by web-browser login mechanisms.
+\end{itemize}
+
+This is the biggest challenge so far in organising events on small venues or rehearsing at home.  It seems that the minimum requirement is to have configuration access to the router which runs the WiFi network.  The WAN address to the router can be obtained and sent to other locations using python based tools, or other available tools for this purpose. 
+
+\section{References}
+\label{sec:org5b7107e}
+
+\subsection{Print}
+\label{sec:orgff565ad}
+
+Uexküll, Jakob von. 1934.  "A Stroll through the Worlds of Animals and Men: A Picture Book of Invisible Worlds" (original Title: "Streifzüge durch die Umwelten von Tieren und Menschen: Ein Bilderbuch unsichtbarer Welten"). In: Verständliche Wissenschaft, Vol. 21. Berlin, J. Springer.
+
+Virgo, Nathaniel. 2011. Thermodynamics and the Structure of Living Systems. PhD Thesis, University of Sussex.
+
+\subsection{Web}
+\label{sec:org479d57e}
+
+\url{http://sro.sussex.ac.uk/6334/1/Virgo\%2C\_Nathaniel.pdf}
+
+\url{http://www.massey.ac.nz/\~wwpapajl/evolution/lecture1/docs/tick.htm}
+\end{document}
